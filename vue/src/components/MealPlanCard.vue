@@ -14,7 +14,6 @@
         <div class="card-header p-1 text-center text-primary border-bottom-0" v-if="detailed" :style="`background-color: ${background_color}`">
             <span class="font-light text-center" v-if="entry.entry.meal_type.icon != null">{{ entry.entry.meal_type.icon }}</span>
             <span class="font-light d-none d-md-inline">{{ entry.entry.meal_type.name }}</span>
-            <span v-if="entry.entry.shopping" class="font-light"><i class="fas fa-shopping-cart fa-xs float-left" v-b-tooltip.hover.top :title="$t('in_shopping')" /></span>
         </div>
         <div class="card-img-overlay h-100 d-flex flex-column justify-content-right float-right text-right p-0" v-if="detailed">
             <a>

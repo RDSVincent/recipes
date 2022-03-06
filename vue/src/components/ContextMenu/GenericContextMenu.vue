@@ -7,9 +7,7 @@
             <b-dropdown-item v-on:click="$emit('item-action', 'edit')" v-if="show_edit"> <i class="fas fa-pencil-alt fa-fw"></i> {{ $t("Edit") }} </b-dropdown-item>
 
             <b-dropdown-item v-on:click="$emit('item-action', 'delete')" v-if="show_delete"> <i class="fas fa-trash-alt fa-fw"></i> {{ $t("Delete") }} </b-dropdown-item>
-            <b-dropdown-item v-on:click="$emit('item-action', 'add-shopping')" v-if="show_shopping">
-                <i class="fas fa-cart-plus fa-fw"></i> {{ $t("Add_to_Shopping") }}
-            </b-dropdown-item>
+
             <b-dropdown-item v-on:click="$emit('item-action', 'add-onhand')" v-if="show_onhand"> <i class="fas fa-clipboard-check fa-fw"></i> {{ $t("OnHand") }} </b-dropdown-item>
 
             <b-dropdown-item v-on:click="$emit('item-action', 'move')" v-if="show_move"> <i class="fas fa-expand-arrows-alt fa-fw"></i> {{ $t("Move") }} </b-dropdown-item>

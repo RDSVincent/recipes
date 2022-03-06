@@ -59,7 +59,6 @@
                         class="p-0"
                         :show_merge="useMerge"
                         :show_move="useMove"
-                        :show_shopping="useShopping"
                         :show_onhand="useOnhand"
                         @item-action="$emit('item-action', { action: $event, source: item })"
                     >

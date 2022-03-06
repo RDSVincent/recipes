@@ -287,16 +287,6 @@ export default {
                     })
             }
         },
-        // this currently assumes shopping is only applicable on FOOD model
-        addShopping: function (food) {
-            let api = new ApiApiFactory()
-            food.shopping = true
-            api.createShoppingListEntry({ food: food, amount: 1 }).then(() => {
-                StandardToasts.makeStandardToast(StandardToasts.SUCCESS_CREATE)
-                this.refreshCard(food, this.items_left)
-                this.refreshCard({ ...food }, this.items_right)
-            })
-        },
         updateThis: function (item) {
             this.refreshThis(item.id)
         },

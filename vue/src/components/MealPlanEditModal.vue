@@ -75,14 +75,6 @@
                                     ></generic-multiselect>
                                     <small tabindex="-1" class="form-text text-muted">{{ $t("Share") }}</small>
                                 </b-form-group>
-                                <b-input-group v-if="!autoMealPlan">
-                                    <b-form-checkbox id="AddToShopping" v-model="mealplan_settings.addshopping" />
-                                    <small tabindex="-1" class="form-text text-muted">{{ $t("AddToShopping") }}</small>
-                                </b-input-group>
-                                <b-input-group v-if="mealplan_settings.addshopping">
-                                    <b-form-checkbox id="reviewShopping" v-model="mealplan_settings.reviewshopping" />
-                                    <small tabindex="-1" class="form-text text-muted">{{ $t("review_shopping") }}</small>
-                                </b-input-group>
                             </div>
                             <div class="col-lg-6 d-none d-lg-block d-xl-block">
                                 <recipe-card v-if="entryEditing.recipe" :recipe="entryEditing.recipe" :detailed="false"></recipe-card>
